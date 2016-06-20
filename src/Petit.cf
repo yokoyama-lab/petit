@@ -1,0 +1,7 @@
+Ass . Stm ::= Ident ":=" Exp ;
+Con . Stm ::= Stm ";" Stm ;
+For . Stm ::= "for" Exp "times" "do" Stm "end" ;
+
+Zer . Exp ::= "0" ;
+Var . Exp ::= Ident ;
+Suc . Exp ::= "suc" Exp ;

@@ -1,0 +1,9 @@
+a1 := suc suc suc suc suc 0;
+a2 := suc suc suc suc 0;
+
+r := 0;
+for a2 times do
+  for a1 times do
+    r := suc r
+  end
+end
