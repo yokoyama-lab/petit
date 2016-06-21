@@ -10,6 +10,8 @@ let showTree (t : AbsPetit.stm) : string =
     "[Abstract syntax]\n\n"^
     (fun x -> ShowPetit.show (ShowPetit.showStm x)) t^ "\n\n"^
     "[Linearized tree]\n\n"^ PrintPetit.printTree PrintPetit.prtStm t^
+    "\n\n"^
+    PrintPetit.printTree (fun i u -> EvalPetit.prtStore i (EvalPetit.evalStm [] u)) t ^
     "\n"
 ;;
 
