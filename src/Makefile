@@ -8,7 +8,7 @@ clean:
 	-rm -f *.cmi *.cmo *.o
 
 distclean: clean
-	-rm -f LexPetit.* ParPetit.* PrintPetit.* ShowPetit.* AbsPetit.* petit BNFC_Util.ml
+	-rm -f LexPetit.* ParPetit.* PrintPetit.* ShowPetit.* AbsPetit.* petit BNFC_Util.ml SkelPetit.ml
 
 test:
 	./petit ../example/addition.petit
